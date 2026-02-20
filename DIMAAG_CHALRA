@@ -29,6 +29,10 @@ Underlying assumptions->
 2.3.4) TES-> This considers all 3 variables, Level, Trend, and Seasonality (Forecast= (Level+Trend)* Seaonality+ Noise)
 
 
+3) THE VALIDATION 
+
+In case of Time-Series, it is to be ensured that the Noise, left after the model, is White Noise (Normal Distribution, Mean=0)
+
 3) THE EVALUATION
 
 3.1) MAE-> For measuring how far off prediction is from the actual data. 
