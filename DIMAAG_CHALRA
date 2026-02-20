@@ -1,3 +1,8 @@
+0) THE SOFTWARE
+
+Initially started with Excel, would later code in Python.
+Solved for optimal values of parameters using GRG Non-linear solver (Flex).
+
 1) THE DATA 
 The dataset is a time-series. How do I know? Because the target variable is a random variable, indexed by time (months in a year), across a few years, hintiong towards the possibility 
 of cylicity/seasonality/ trend/ level...... 
