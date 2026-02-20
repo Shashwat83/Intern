@@ -1,0 +1,35 @@
+1) THE DATA 
+The dataset is a time-series. How do I know? Because the target variable is a random variable, indexed by time (months in a year), across a few years, hintiong towards the possibility 
+of cylicity/seasonality/ trend/ level...... 
+
+2) THE MODEL
+
+I intentionally decided to start with extremely basic statistical models. Probably not a great idea for setting a baseline, but I would genuinely like to explore via this, some intuitions 
+that I have always had, regarding pre-computational era thinking (Kindly feel free to ignore, this is just something I obsess over).
+
+
+2.1) Started with Rolling-Forecast:
+Underlying assumptions-> 
+
+2.1.1) Forecast= Trend+ Seasonality + Noise
+2.1.2) Seasonality is additive in nature (could be multiplicative-> should be a test to check)
+2.1.3) Contribution of all previous 12 months, is equal to the present month (Doesn't really happen in the domain of the project, but ok for setting a base.)
+2.1.4) The model only takes into account the initial actual data, for prediction, rest all are based on maths, over actual data. 
+
+2.2) Exponential Smoothing: I managed to explore the SES, DES, and TES methods.
+
+2.2.1) Seasonality still assumed to be additive (except in case of TES).
+2.2.2) SES-> Only the level of the series, is considered, and evaluated/forecasted. 
+2.3.3) DES-> This considers both the Level of the series and the Trend. 
+2.3.4) TES-> This considers all 3 variables, Level, Trend, and Seasonality (Forecast= (Level+Trend)* Seaonality+ Noise)
+
+
+3) THE EVALUATION
+
+3.1) MAE-> For measuring how far off prediction is from the actual data. 
+3.2) DA-> Direction Accuracy 
+3.3) RMSE-> I would want to punish the larger errors, as large deviations, have extremely significant effect.
+
+
+
+
